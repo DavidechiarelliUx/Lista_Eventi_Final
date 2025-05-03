@@ -1,4 +1,4 @@
-package com.example.Lista_Eventi_Final.auth;
+package it.epicode.auth;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

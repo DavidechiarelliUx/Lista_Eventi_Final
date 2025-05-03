@@ -1,4 +1,4 @@
-package com.example.Lista_Eventi_Final;
+package it.epicode;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
