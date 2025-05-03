@@ -23,7 +23,7 @@ public class AuthRunner implements ApplicationRunner {
         // Creazione dell'utente admin se non esiste
         Optional<AppUser> adminUser = appUserService.findByUsername("admin");
         if (adminUser.isEmpty()) {
-            appUserService.registerUser("admin", "adminpwd", Set.of(Role.ROLE_ADMIN));
+            appUserService.registerUser("organizer", "organizerpwd", Set.of(Role.ROLE_ORGANIZER));
         }
 
         // Creazione dell'utente user se non esiste
@@ -33,10 +33,10 @@ public class AuthRunner implements ApplicationRunner {
         }
 
         // Creazione dell'utente seller se non esiste
-        Optional<AppUser> normalSeller = appUserService.findByUsername("seller");
-        if (normalUser.isEmpty()) {
-            appUserService.registerUser("seller", "sellerpwd", Set.of(Role.ROLE_SELLER));
-        }
+       // Optional<AppUser> normalSeller = appUserService.findByUsername("seller");
+        //        if (normalUser.isEmpty()) {
+        //            appUserService.registerUser("seller", "sellerpwd", Set.of(Role.ROLE_SELLER));
+        //        }
 
 
     }
