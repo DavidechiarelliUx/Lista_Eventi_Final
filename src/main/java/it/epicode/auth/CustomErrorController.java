@@ -1,4 +1,4 @@
-package com.example.Lista_Eventi_Final.auth;
+package it.epicode.auth;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.boot.web.servlet.error.ErrorController;
