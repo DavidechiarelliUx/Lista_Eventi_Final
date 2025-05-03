@@ -32,11 +32,6 @@ public class EventoService {
         return eventoRepository.save(evento);
     }
 
-    public Evento getEventoById(Long id) {
-        return eventoRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Evento non trovato"));
-    }
-
     public List<Evento> findAll() {
         return eventoRepository.findAll();
     }
